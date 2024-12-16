@@ -1,0 +1,213 @@
+let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
+argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=99
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+26,31fold
+33,35fold
+38,39fold
+37,42fold
+44,46fold
+25,46fold
+61,64fold
+60,66fold
+68,69fold
+67,70fold
+59,70fold
+58,70fold
+57,70fold
+49,70fold
+74,78fold
+101,103fold
+115,116fold
+113,116fold
+121,122fold
+120,122fold
+119,125fold
+83,125fold
+141,142fold
+145,146fold
+147,148fold
+144,148fold
+143,148fold
+129,149fold
+163,167fold
+162,168fold
+172,177fold
+171,178fold
+169,179fold
+161,179fold
+151,179fold
+188,190fold
+193,197fold
+200,201fold
+202,203fold
+198,205fold
+192,205fold
+209,210fold
+181,212fold
+221,223fold
+226,230fold
+233,234fold
+235,236fold
+231,237fold
+225,237fold
+214,240fold
+273,275fold
+271,275fold
+280,281fold
+282,283fold
+287,288fold
+286,289fold
+285,289fold
+291,292fold
+290,292fold
+270,292fold
+294,295fold
+298,299fold
+300,303fold
+297,303fold
+307,308fold
+310,312fold
+313,314fold
+316,317fold
+305,320fold
+322,325fold
+327,330fold
+332,335fold
+337,342fold
+346,347fold
+348,349fold
+351,352fold
+353,354fold
+350,354fold
+358,359fold
+357,359fold
+355,359fold
+344,360fold
+363,364fold
+369,370fold
+372,373fold
+375,376fold
+368,379fold
+382,384fold
+366,384fold
+385,386fold
+388,389fold
+390,391fold
+362,391fold
+394,395fold
+398,399fold
+397,399fold
+393,399fold
+402,403fold
+401,404fold
+407,408fold
+416,417fold
+419,420fold
+413,420fold
+406,421fold
+425,426fold
+427,428fold
+423,428fold
+440,442fold
+443,445fold
+439,445fold
+436,447fold
+454,455fold
+449,455fold
+456,458fold
+430,460fold
+465,466fold
+468,469fold
+467,469fold
+464,469fold
+470,472fold
+480,481fold
+482,483fold
+488,489fold
+493,494fold
+495,496fold
+498,499fold
+501,502fold
+503,504fold
+506,507fold
+490,508fold
+510,511fold
+509,511fold
+515,516fold
+517,518fold
+520,521fold
+522,523fold
+525,527fold
+528,529fold
+513,529fold
+475,529fold
+532,533fold
+537,538fold
+543,544fold
+546,547fold
+548,549fold
+539,551fold
+552,553fold
+557,558fold
+561,562fold
+565,566fold
+567,568fold
+555,568fold
+531,568fold
+572,573fold
+574,575fold
+576,577fold
+578,579fold
+580,581fold
+570,582fold
+474,583fold
+584,585fold
+586,588fold
+462,588fold
+590,591fold
+594,595fold
+593,604fold
+609,611fold
+608,611fold
+607,612fold
+614,615fold
+618,619fold
+620,621fold
+617,621fold
+606,621fold
+624,625fold
+626,627fold
+623,629fold
+81,629fold
+642,643fold
+647,648fold
+646,649fold
+651,652fold
+650,653fold
+655,656fold
+654,657fold
+661,662fold
+660,662fold
+664,665fold
+663,665fold
+659,665fold
+634,667fold
+632,667fold
+let &fdl = &fdl
+let s:l = 440 - ((35 * winheight(0) + 27) / 55)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 440
+normal! 050|
+let &g:so = s:so_save | let &g:siso = s:siso_save
+doautoall SessionLoadPost
+" vim: set ft=vim :

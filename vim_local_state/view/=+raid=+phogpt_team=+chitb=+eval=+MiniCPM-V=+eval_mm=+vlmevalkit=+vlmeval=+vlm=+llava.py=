@@ -1,0 +1,143 @@
+let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
+argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=99
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+19,21fold
+22,24fold
+28,31fold
+34,35fold
+36,37fold
+38,39fold
+43,47fold
+42,48fold
+41,48fold
+53,54fold
+52,55fold
+50,55fold
+56,57fold
+49,58fold
+16,66fold
+70,71fold
+68,72fold
+81,82fold
+86,87fold
+86,88fold
+84,88fold
+89,90fold
+95,96fold
+94,97fold
+93,97fold
+98,99fold
+74,103fold
+108,109fold
+110,112fold
+107,112fold
+105,113fold
+121,126fold
+135,136fold
+140,141fold
+139,141fold
+115,143fold
+155,156fold
+157,158fold
+162,163fold
+167,168fold
+166,168fold
+145,171fold
+11,171fold
+181,182fold
+184,185fold
+186,187fold
+188,189fold
+191,193fold
+194,195fold
+199,200fold
+198,200fold
+202,203fold
+201,203fold
+197,203fold
+206,207fold
+205,207fold
+209,210fold
+208,210fold
+204,210fold
+179,217fold
+221,222fold
+225,226fold
+224,228fold
+223,228fold
+230,233fold
+229,233fold
+234,235fold
+219,238fold
+241,242fold
+243,244fold
+245,246fold
+247,248fold
+249,250fold
+252,253fold
+254,255fold
+256,257fold
+240,258fold
+262,263fold
+260,264fold
+273,274fold
+278,279fold
+278,280fold
+276,280fold
+281,282fold
+287,288fold
+286,289fold
+285,289fold
+290,291fold
+266,294fold
+299,300fold
+301,303fold
+298,303fold
+305,308fold
+304,309fold
+296,315fold
+174,315fold
+327,330fold
+331,332fold
+339,340fold
+341,342fold
+325,348fold
+353,354fold
+355,357fold
+352,357fold
+362,363fold
+361,363fold
+375,379fold
+374,380fold
+350,382fold
+318,382fold
+394,397fold
+398,399fold
+406,407fold
+392,414fold
+421,422fold
+423,427fold
+420,427fold
+438,441fold
+446,451fold
+445,452fold
+416,454fold
+385,454fold
+let &fdl = &fdl
+let s:l = 419 - ((14 * winheight(0) + 25) / 50)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 419
+normal! 0
+let &g:so = s:so_save | let &g:siso = s:siso_save
+doautoall SessionLoadPost
+" vim: set ft=vim :

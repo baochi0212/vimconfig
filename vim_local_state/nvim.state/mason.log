@@ -1,0 +1,4 @@
+[INFO  Sun Nov  3 02:30:36 2024] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=python-lsp-server) {}
+[ERROR Sun Nov  3 02:30:36 2024] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=python-lsp-server) error="Failed to find python3 installation."
+[INFO  Sun Nov  3 02:31:55 2024] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=python-lsp-server) {}
+[INFO  Sun Nov  3 02:32:16 2024] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=python-lsp-server)
